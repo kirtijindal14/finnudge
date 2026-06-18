@@ -5,7 +5,7 @@ import csv
 screenshots_dir = "data/screenshots"
 output_file = "data/labelled.csv"
 
-files = sorted([f for f in os.listdir(screenshots_dir) if f.endswith(".jpeg")])
+files = sorted([f for f in os.listdir(screenshots_dir) if f.endswith(".jpeg") or f.endswith(".png")])
 
 pattern_map = {
     "0": "CLEAN", "1": "FOMO", "2": "LOSS", "3": "ANCHOR",

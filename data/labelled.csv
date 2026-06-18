@@ -81,3 +81,26 @@ zerodha_001.jpeg,zerodha,onboarding,CLEAN,none,0,clean UI
 zerodha_002.jpeg,zerodha,stock,CLEAN,none,0,clean UI
 zerodha_003.jpeg,zerodha,onboarding,CLEAN,none,0,clean UI
 zerodha_004.jpeg,zerodha,explore,GAMIFY,variable_reward,2,"Referral program awards 300 reward points per referral, incentivizing sharing through points-based rewards."
+groww_sim_001.png,groww,portfolio,LOSS,loss_aversion,2,"Groww – Portfolio highlights total and individual losses in red, making losses more noticeable and encouraging frequent monitoring or reaction to recover losses."
+sim_001.png,sim,portfolio,LOSS,loss_aversion,2,"Groww – Total portfolio loss is prominently displayed first, drawing immediate attention to negative returns."
+sim_002.png,sim,portfolio,LOSS,loss_aversion,2,"Groww – Total returns and 1-day returns are highlighted in red, emphasizing losses over gains."
+sim_003.png,sim,portfolio,LOSS,loss_aversion,2,"Groww – Individual holdings display negative returns in red alongside downward graphs, reinforcing focus on losses."
+sim_004.png,sim,portfolio,LOSS,loss_aversion,1,"Zerodha Kite – Negative P&L values are highlighted in red, making losing positions stand out."
+sim_005.png,sim,portfolio,LOSS,loss_aversion,2,"NDmoney – Shows both absolute loss (-₹2.73L) and percentage loss (-20.83%), amplifying the perceived magnitude of losses."
+sim_006.png,sim,portfolio,LOSS,loss_aversion,1,"Zerodha Kite – Individual losing holdings remain highlighted in red despite overall portfolio gains, keeping attention on losses."
+sim_007.png,sim,portfolio,LOSS,loss_aversion,1,Upstox – Losses are highlighted in red across multiple positions and overall P&L.
+sim_008.png,sim,portfolio,LOSS,loss_aversion,1,Zerodha Kite – Total P&L is displayed prominently in red at the top of the portfolio.
+sim_009.png,sim,portfolio,CLEAN,none,0,clean UI
+sim_010.png,sim,explore,SCARCITY,scarcity,1,"Groww – IPOs are categorized as Open Now, Upcoming, and Recently Closed, emphasizing limited application windows."
+sim_011.png,sim,portfolio,LOSS,loss_aversion,1,"Groww – Daily loss is highlighted in red alongside total returns, keeping short-term losses visible despite overall gains."
+sim_012.png,sim,explore,SCARCITY,scarcity,2,"Groww – IPO page prominently displays the closing date (""Closes on 07 Nov""), creating urgency to apply before the deadline."
+sim_013.png,sim,portfolio,LOSS,loss_aversion,1,Angel One – Today's loss is highlighted separately in red despite the portfolio showing an overall gain.
+sim_014.png,sim,stock,FOMO,social_proof,2,Groww - Angel One – Today's loss is highlighted separately in red despite the portfolio showing an overall gain.
+sim_015.png,sim,stock,FOMO,social_proof,2,Groww
+sim_016.png,sim,home,FOMO,social_proof,2,"Zerodha - Popular Stocks"" with recent buy counts (e.g., ×3.2L recent buys), leveraging social proof to encourage users to buy trending stocks"
+sim_017.png,sim,portfolio,LOSS,loss_aversion,1,"Groww - Displays live negative P&L in red for open F&O positions, making ongoing losses highly salient and encouraging users to react or manage positions"
+sim_018.png,sim,stock,CLEAN,none,0,clean UI
+sim_019.png,sim,stock,CLEAN,none,0,clean UI
+sim_020.png,sim,portfolio,CLEAN,none,0,clean UI
+sim_021.png,sim,portfolio,GAMIFY,variable_reward,2,"Upstoxx - Calendar view color-codes daily profits/losses and prominently highlights winning days, making trading feel like tracking game scores"
+sim_022.png,sim,portfolio,ANCHOR,anchoring,2,"INDmoney - Emphasizes a projected net worth (₹25.3L by 2036), anchoring users to a future wealth target and reinforcing long-term investing"
