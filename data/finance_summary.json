@@ -1,0 +1,30 @@
+{
+  "base_case": {
+    "clean_corpus": 1161695,
+    "nudged_corpus": 925178,
+    "total_loss": 236517,
+    "cost_per_switch": 5913,
+    "loss_pct": 20.4
+  },
+  "conservative": {
+    "clean_corpus": 464678,
+    "nudged_corpus": 417375,
+    "total_loss": 47303,
+    "cost_per_switch": 2365,
+    "loss_pct": 10.2
+  },
+  "aggressive": {
+    "clean_corpus": 2323391,
+    "nudged_corpus": 1613840,
+    "total_loss": 709551,
+    "cost_per_switch": 11826,
+    "loss_pct": 30.5
+  },
+  "app_impacts": {
+    "groww": 354776,
+    "angelone": 354776,
+    "indmoney": 118259,
+    "upstox": 118259,
+    "zerodha": 59129
+  }
+}

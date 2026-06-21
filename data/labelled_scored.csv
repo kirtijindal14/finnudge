@@ -1,0 +1,105 @@
+filename,app,screen_type,pattern_label,bias_exploited,severity,notes,nudge_score
+angelone_001.jpeg,angelone,explore,FOMO,social_proof,2,Follower counts on popular lists use social proof to influence discovery.,90
+angelone_002.jpeg,angelone,portfolio,DEFAULT,default_bias,2,"Large ""ADD FUNDS"" button makes funding the account the primary action.",30
+angelone_003.jpeg,angelone,home,DEFAULT,default_bias,2,"""View Status"" banner makes checking application status the primary action.",30
+angelone_004.jpeg,angelone,explore,CLEAN,none,0,clean UI,0
+angelone_005.jpeg,angelone,home,SCARCITY,scarcity,2,"""Expire today"" banner and trading deadline create urgency to act.",80
+angelone_006.jpeg,angelone,home,CLEAN,none,0,clean UI,0
+angelone_007.jpeg,angelone,explore,LOSS,loss_aversion,2,"Completed trade prominently highlights a 78.12% profit achieved, anchoring users to strong past returns and encouraging similar trades.",70
+angelone_008.jpeg,angelone,fund,ANCHOR,anchoring,2,"Multiple ETF cards prominently display 1-year returns, anchoring users to past performance when choosing investments.",40
+angelone_009.jpeg,angelone,fund,ANCHOR,anchoring,2,"'Highest Returns' section prominently displays 1-year returns, anchoring users to past performance when selecting ETFs.",40
+angelone_010.jpeg,angelone,fund,ANCHOR,anchoring,2,"ETF cards display 1-year returns across curated categories, anchoring users to historical performance when comparing funds.",40
+angelone_011.jpeg,angelone,home,DEFAULT,default_bias,1,default ai helping in stress free training,15
+angelone_012.jpeg,angelone,fund,GAMIFY,variable_reward,3,"The SIP calculator frames investing around achieving a ₹1 crore goal, encouraging users to pursue a milestone and start investing.",75
+angelone_013.jpeg,angelone,fund,FOMO,social_proof,2,"""Most Bought FDs"" section does contain a FOMO element because it highlights popularity",90
+angelone_014.jpeg,angelone,fund,DEFAULT,default_bias,2,"A prominent ‘Invest Now’ banner makes opening an FD the primary action, nudging users toward immediate investment.",30
+angelone_015.jpeg,angelone,fund,DEFAULT,default_bias,2,"A prominent ‘Invest Now’ banner makes opening an FD the primary action, nudging users toward immediate investment.",30
+angelone_016.jpeg,angelone,fund,CLEAN,none,0,clean UI,0
+angelone_017.jpeg,angelone,fund,DEFAULT,default_bias,2,"A prominent ‘Invest Now’ banner makes opening an FD the primary action, nudging users toward immediate investment.",30
+groww_001.jpeg,groww,explore,CLEAN,none,0,clean UI,0
+groww_002.jpeg,groww,explore,FOMO,social_proof,2,"""Most bought on Groww"" highlights stocks purchased by many users, using social proof to encourage users to consider the same investments.",90
+groww_003.jpeg,groww,explore,ANCHOR,anchoring,2,"Popular funds prominently display 3-year historical returns, anchoring users to past performance when evaluating investment options.",40
+groww_004.jpeg,groww,explore,CLEAN,none,0,clean UI,0
+groww_005.jpeg,groww,explore,SCARCITY,scarcity,3,"NFO listings prominently display closing dates, creating urgency to invest before the offer period ends.",100
+groww_006.jpeg,groww,explore,CLEAN,none,0,clean UI,0
+groww_007.jpeg,groww,explore,DEFAULT,default_bias,2,"Prominent ""Start a SIP"" button encourages users to begin a monthly investment as the default action.",30
+groww_008.jpeg,groww,explore,DEFAULT,default_bias,3,"Large ""Explore Bonds"" CTA makes investing in bonds the default action by prominently promoting a single product.",45
+groww_009.jpeg,groww,explore,GAMIFY,variable_reward,2,"Referral page encourages users to invite friends through a reward-based referral program, promoting engagement beyond investing.",50
+indmoney_001.jpeg,indmoney,explore,CLEAN,none,0,clean UI,0
+indmoney_002.jpeg,indmoney,explore,CLEAN,none,0,clean UI,0
+indmoney_003.jpeg,indmoney,onboarding,DEFAULT,default_bias,3,"Large ""Start Investing"" CTA dominates the onboarding card and nudges the user to begin investing as the default action.",45
+indmoney_004.jpeg,indmoney,home,GAMIFY,variable_reward,3,Cashback reward of up to ₹100 is prominently advertised to encourage users to pay bills through the app for rewards.,75
+indmoney_005.jpeg,indmoney,home,DEFAULT,default_bias,2,"Loan offer against mutual funds prominently displays ₹5,00,00,000 availability with a visible ""Check Now"" CTA, encouraging borrowing as the default next action.",30
+indmoney_006.jpeg,indmoney,home,GAMIFY,variable_reward,2,"Cashback reward of up to ₹1,000 is prominently promoted to encourage users to add a credit card and pay bills through the app.",50
+indmoney_007.jpeg,indmoney,home,DEFAULT,default_bias,3,"Full-screen upgrade popup with a pre-selected consent checkbox and prominent ""Upgrade to INDprivé"" button nudges users to upgrade as the default action.",45
+indmoney_008.jpeg,indmoney,home,DEFAULT,default_bias,2,"Large ""Get Credit Score"" CTA is the primary focus of the screen, encouraging users to generate their credit score as the default action.",30
+indmoney_009.jpeg,indmoney,home,SCARCITY,scarcity,2,"Live IPOs display limited application dates with prominent ""Apply now"" CTAs, creating urgency to invest before the offer closes.",80
+indmoney_010.jpeg,indmoney,explore,ANCHOR,anchoring,2,"Analyst target percentages are prominently shown for stocks, anchoring users to expected future price gains when evaluating investments.",40
+indmoney_011.jpeg,indmoney,home,GAMIFY,variable_reward,3,"Rewards of up to ₹5,000 and ₹300 for creating a US Stocks account encourage users to complete actions in exchange for incentives.",75
+indmoney_012.jpeg,indmoney,home,CLEAN,none,0,clean UI,0
+indmoney_013.jpeg,indmoney,home,CLEAN,none,0,clean UI,0
+indmoney_014.jpeg,indmoney,onboarding,FOMO,social_proof,1,social proof displayed during onboarding,45
+indmoney_015.jpeg,indmoney,onboarding,CLEAN,none,0,clean UI,0
+indmoney_016.jpeg,indmoney,stock,LOSS,loss_aversion,2,Full-screen promotional popup encouraging users to open a US Stocks account by highlighting historical Netflix returns. Interrupts the current flow but can be dismissed.,70
+indmoney_017.jpeg,indmoney,stock,ANCHOR,anchoring,1,"Uses ""Most Bought Stocks"" to highlight popularity and encourage investment through social proof. No false scarcity or urgency.",20
+indmoney_018.jpeg,indmoney,home,CLEAN,none,0,clean UI,0
+indmoney_019.jpeg,indmoney,fund,CLEAN,none,0,clean UI,0
+indmoney_020.jpeg,indmoney,onboarding,DEFAULT,default_bias,1,default ai assistant to smooth things,15
+indmoney_021.jpeg,indmoney,fund,CLEAN,none,0,clean UI,0
+indmoney_022.jpeg,indmoney,home,GAMIFY,variable_reward,1,Uses cashback rewards (₹100) to encourage bill payments and repeat engagement. No urgency or pressure; incentive-based motivation.,25
+indmoney_023.jpeg,indmoney,home,GAMIFY,variable_reward,1,Uses cashback rewards (₹100) to encourage bill payments and repeat engagement. No urgency or pressure; incentive-based motivation.,25
+indmoney_024.jpeg,indmoney,home,DEFAULT,default_bias,3,"Premium plan is pre-selected and promoted as the recommended option, nudging users toward upgrading.",45
+indmoney_025.jpeg,indmoney,home,ANCHOR,anchoring,2,"Shows ""50% off"" with the old price struck through, making the discounted fee appear more attractive through price anchoring.",40
+indmoney_026.jpeg,indmoney,home,ANCHOR,anchoring,2,"Highlights ""75% off"" and shows the original ₹20 crossed out, making the discounted ₹5 fee seem more valuable through anchoring.",40
+indmoney_027.jpeg,indmoney,home,DEFAULT,default_bias,2,"Premium (INDprivé) option is highlighted by default and framed as offering exclusive AI features, nudging users toward upgrading.",30
+indmoney_028.jpeg,indmoney,home,DEFAULT,default_bias,2,Highlights exclusive premium support and keeps the premium plan selected by default to encourage upgrading.,30
+indmoney_029.jpeg,indmoney,home,CLEAN,none,0,clean UI,0
+upstox_001.jpeg,upstox,onboarding,GAMIFY,variable_reward,2,"Rewards are unlocked step-by-step (₹50 → ₹75 → ₹125), gamifying onboarding to encourage users to complete verification.",50
+upstox_002.jpeg,upstox,onboarding,DEFAULT,default_bias,2,"""Monthly"" is pre-selected as the default settlement option, nudging users toward that choice without requiring an active selection.",30
+upstox_003.jpeg,upstox,onboarding,GAMIFY,variable_reward,2,"Celebrates completion by showing unlocked rewards (₹50 + ₹75 + ₹125 = ₹250), reinforcing onboarding through milestone-based rewards.",50
+upstox_004.jpeg,upstox,explore,CLEAN,none,0,clean UI,0
+upstox_005.jpeg,upstox,explore,ANCHOR,anchoring,1,"""Top"" badge and ""Above Avg."" performance labels anchor users toward featured funds, making them appear as recommended/default choices.",20
+upstox_006.jpeg,upstox,explore,DEFAULT,default_bias,2,"Upsell modal promoting Upstox Pro with premium features. Emphasizes benefits but does not use urgency, scarcity, or deceptive defaults.",30
+upstox_007.jpeg,upstox,onboarding,GAMIFY,variable_reward,1,Uses playful visual theme and goal-selection to make onboarding more engaging.,25
+upstox_008.jpeg,upstox,onboarding,GAMIFY,variable_reward,1,Uses playful visual theme and goal-selection to make onboarding more engaging.,25
+upstox_009.jpeg,upstox,onboarding,GAMIFY,variable_reward,1,"Uses a goal-based investment journey with progress visualization, making investing feel like completing a mission.",25
+upstox_010.jpeg,upstox,onboarding,GAMIFY,variable_reward,1,"Uses a goal-based investment journey with progress visualization, making investing feel like completing a mission.",25
+upstox_011.jpeg,upstox,onboarding,GAMIFY,variable_reward,1,"Uses a goal-based investment journey with progress visualization, making investing feel like completing a mission.",25
+upstox_012.jpeg,upstox,onboarding,GAMIFY,variable_reward,1,"Uses a goal-based investment journey with progress visualization, making investing feel like completing a mission.",25
+upstox_013.jpeg,upstox,onboarding,GAMIFY,variable_reward,1,"Uses a goal-based investment journey with progress visualization, making investing feel like completing a mission.",25
+upstox_014.jpeg,upstox,explore,ANCHOR,anchoring,1,"""Highest Returns"" badge highlights specific FD options, anchoring attention toward featured products.",20
+upstox_015.jpeg,upstox,onboarding,GAMIFY,variable_reward,1,"Uses a goal-based investment journey with progress visualization, making investing feel like completing a mission.",25
+upstox_016.jpeg,upstox,explore,FOMO,social_proof,1,"""Get car insurance in 2 mins"" emphasizes quick completion, creating mild urgency to begin the process.",45
+upstox_017.jpeg,upstox,explore,FOMO,social_proof,1,"""NEW"" badge on Insurance and notification dots subtly encourage users to explore those products.",45
+upstox_018.jpeg,upstox,explore,CLEAN,none,0,clean UI,0
+upstox_019.jpeg,upstox,explore,ANCHOR,anchoring,1,"""More than 8.5%"" highlights a high return benchmark, anchoring attention toward high-yield FDs.",20
+upstox_020.jpeg,upstox,explore,ANCHOR,anchoring,2,"""FDs with top returns"" ranks products by highest yield, making return % the primary comparison anchor.",40
+upstox_021.jpeg,upstox,explore,ANCHOR,anchoring,2,"Personalized ""best returns"" recommendations anchor users on maximizing returns and preselect the highest-yield FD.",40
+upstox_022.jpeg,upstox,explore,GAMIFY,variable_reward,1,"""Top the FD game"" frames learning as a game, making investing feel engaging through playful language.",25
+zerodha_001.jpeg,zerodha,onboarding,CLEAN,none,0,clean UI,0
+zerodha_002.jpeg,zerodha,stock,CLEAN,none,0,clean UI,0
+zerodha_003.jpeg,zerodha,onboarding,CLEAN,none,0,clean UI,0
+zerodha_004.jpeg,zerodha,explore,GAMIFY,variable_reward,2,"Referral program awards 300 reward points per referral, incentivizing sharing through points-based rewards.",50
+groww_sim_001.png,groww,portfolio,LOSS,loss_aversion,2,"Groww – Portfolio highlights total and individual losses in red, making losses more noticeable and encouraging frequent monitoring or reaction to recover losses.",70
+sim_001.png,sim,portfolio,LOSS,loss_aversion,2,"Groww – Total portfolio loss is prominently displayed first, drawing immediate attention to negative returns.",70
+sim_002.png,sim,portfolio,LOSS,loss_aversion,2,"Groww – Total returns and 1-day returns are highlighted in red, emphasizing losses over gains.",70
+sim_003.png,sim,portfolio,LOSS,loss_aversion,2,"Groww – Individual holdings display negative returns in red alongside downward graphs, reinforcing focus on losses.",70
+sim_004.png,sim,portfolio,LOSS,loss_aversion,1,"Zerodha Kite – Negative P&L values are highlighted in red, making losing positions stand out.",35
+sim_005.png,sim,portfolio,LOSS,loss_aversion,2,"NDmoney – Shows both absolute loss (-₹2.73L) and percentage loss (-20.83%), amplifying the perceived magnitude of losses.",70
+sim_006.png,sim,portfolio,LOSS,loss_aversion,1,"Zerodha Kite – Individual losing holdings remain highlighted in red despite overall portfolio gains, keeping attention on losses.",35
+sim_007.png,sim,portfolio,LOSS,loss_aversion,1,Upstox – Losses are highlighted in red across multiple positions and overall P&L.,35
+sim_008.png,sim,portfolio,LOSS,loss_aversion,1,Zerodha Kite – Total P&L is displayed prominently in red at the top of the portfolio.,35
+sim_009.png,sim,portfolio,CLEAN,none,0,clean UI,0
+sim_010.png,sim,explore,SCARCITY,scarcity,1,"Groww – IPOs are categorized as Open Now, Upcoming, and Recently Closed, emphasizing limited application windows.",40
+sim_011.png,sim,portfolio,LOSS,loss_aversion,1,"Groww – Daily loss is highlighted in red alongside total returns, keeping short-term losses visible despite overall gains.",35
+sim_012.png,sim,explore,SCARCITY,scarcity,2,"Groww – IPO page prominently displays the closing date (""Closes on 07 Nov""), creating urgency to apply before the deadline.",80
+sim_013.png,sim,portfolio,LOSS,loss_aversion,1,Angel One – Today's loss is highlighted separately in red despite the portfolio showing an overall gain.,35
+sim_014.png,sim,stock,FOMO,social_proof,2,Groww - Angel One – Today's loss is highlighted separately in red despite the portfolio showing an overall gain.,90
+sim_015.png,sim,stock,FOMO,social_proof,2,Groww,90
+sim_016.png,sim,home,FOMO,social_proof,2,"Zerodha - Popular Stocks"" with recent buy counts (e.g., ×3.2L recent buys), leveraging social proof to encourage users to buy trending stocks",90
+sim_017.png,sim,portfolio,LOSS,loss_aversion,1,"Groww - Displays live negative P&L in red for open F&O positions, making ongoing losses highly salient and encouraging users to react or manage positions",35
+sim_018.png,sim,stock,CLEAN,none,0,clean UI,0
+sim_019.png,sim,stock,CLEAN,none,0,clean UI,0
+sim_020.png,sim,portfolio,CLEAN,none,0,clean UI,0
+sim_021.png,sim,portfolio,GAMIFY,variable_reward,2,"Upstoxx - Calendar view color-codes daily profits/losses and prominently highlights winning days, making trading feel like tracking game scores",50
+sim_022.png,sim,portfolio,ANCHOR,anchoring,2,"INDmoney - Emphasizes a projected net worth (₹25.3L by 2036), anchoring users to a future wealth target and reinforcing long-term investing",40
