@@ -1,7 +1,5 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from PIL import Image
-import io
 
 app = FastAPI(title="FinNudge API")
 
@@ -12,43 +10,27 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Lazy load — only load when first request comes in
-models = None
-
-def get_models():
-    global models
-    if models is None:
-        try:
-            from backend.utils import load_models
-        except:
-            from utils import load_models
-        models = load_models()
-    return models
-
-try:
-    from backend.utils import predict_pattern, calculate_nudge_score, calculate_finance_impact
-except:
-    from utils import predict_pattern, calculate_nudge_score, calculate_finance_impact
+def calculate_finance_impact(nudge_score, years=10, monthly=5000):
+    switches = 6 if nudge_score > 40 else 4 if nudge_score > 25 else 1
+    r = 0.12 / 12
+    months = years * 12
+    clean = monthly * (((1+r)**months - 1)/r) * (1+r)
+    avg_corpus = monthly * 6
+    cost_per_switch = (
+        avg_corpus * 0.01 +
+        avg_corpus * 0.08 * 0.20 +
+        avg_corpus * ((1.12)**years - (1.12)**(years-0.5))
+    )
+    total_loss = cost_per_switch * switches * years
+    return {
+        "clean": round(clean),
+        "nudged": round(max(clean - total_loss, 0)),
+        "loss": round(total_loss)
+    }
 
 @app.get("/")
 def root():
     return {"message": "FinNudge API running"}
-
-@app.post("/api/analyse")
-async def analyse(file: UploadFile = File(...)):
-    contents = await file.read()
-    image = Image.open(io.BytesIO(contents)).convert("RGB")
-    m = get_models()
-    pred, confidence, ocr_text = predict_pattern(image, m)
-    nudge_score = calculate_nudge_score(pred)
-    finance = calculate_finance_impact(nudge_score)
-    return {
-        "pattern": pred,
-        "confidence": confidence,
-        "nudge_score": nudge_score,
-        "ocr_text": ocr_text[:200],
-        "finance": finance
-    }
 
 @app.get("/api/rankings")
 def rankings():
