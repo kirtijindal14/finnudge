@@ -1,6 +1,9 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from backend.utils import load_models, predict_pattern, calculate_nudge_score, calculate_finance_impact
+try:
+    from backend.utils import load_models, predict_pattern, calculate_nudge_score, calculate_finance_impact
+except:
+    from utils import load_models, predict_pattern, calculate_nudge_score, calculate_finance_impact
 from PIL import Image
 import io
 
