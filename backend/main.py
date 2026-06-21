@@ -1,9 +1,5 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-try:
-    from backend.utils import load_models, predict_pattern, calculate_nudge_score, calculate_finance_impact
-except:
-    from utils import load_models, predict_pattern, calculate_nudge_score, calculate_finance_impact
 from PIL import Image
 import io
 
@@ -11,12 +7,28 @@ app = FastAPI(title="FinNudge API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-models = load_models()
+# Lazy load — only load when first request comes in
+models = None
+
+def get_models():
+    global models
+    if models is None:
+        try:
+            from backend.utils import load_models
+        except:
+            from utils import load_models
+        models = load_models()
+    return models
+
+try:
+    from backend.utils import predict_pattern, calculate_nudge_score, calculate_finance_impact
+except:
+    from utils import predict_pattern, calculate_nudge_score, calculate_finance_impact
 
 @app.get("/")
 def root():
@@ -26,7 +38,8 @@ def root():
 async def analyse(file: UploadFile = File(...)):
     contents = await file.read()
     image = Image.open(io.BytesIO(contents)).convert("RGB")
-    pred, confidence, ocr_text = predict_pattern(image, models)
+    m = get_models()
+    pred, confidence, ocr_text = predict_pattern(image, m)
     nudge_score = calculate_nudge_score(pred)
     finance = calculate_finance_impact(nudge_score)
     return {
@@ -56,8 +69,6 @@ def finance(monthly: int = 5000, years: int = 10, app: str = "Groww"):
         "INDmoney": 29.5, "Upstox": 28.0, "Zerodha": 12.5
     }
     score = score_map.get(app, 30)
-
-    # Build chart data
     chart_data = []
     for y in range(0, years + 1):
         if y == 0:
@@ -69,7 +80,6 @@ def finance(monthly: int = 5000, years: int = 10, app: str = "Groww"):
                 "clean": round(r["clean"] / 100000, 2),
                 "nudged": round(r["nudged"] / 100000, 2)
             })
-
     base = calculate_finance_impact(score, years, monthly)
     return {
         "clean": base["clean"],
