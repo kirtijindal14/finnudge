@@ -1,0 +1,12 @@
+streamlit
+numpy
+pandas
+joblib
+torch
+open-clip-torch
+pytesseract
+scikit-learn
+matplotlib
+scipy
+Pillow
+imbalanced-learn
