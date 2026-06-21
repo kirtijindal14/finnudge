@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
+import API from '../api'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from "recharts"
 
 export default function Rankings() {
   const [data, setData] = useState(null)
 
   useEffect(() => {
-    axios.get("/api/rankings").then(res => setData(res.data))
+    axios.get(`${API}/api/rankings`).then(res => setData(res.data))
   }, [])
 
   const riskColor = (risk) => {

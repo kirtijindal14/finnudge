@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
+import API from '../api'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine } from "recharts"
 
 export default function Finance() {
@@ -12,7 +13,7 @@ export default function Finance() {
   const fetchData = async () => {
     setLoading(true)
     try {
-      const res = await axios.get(`/api/finance?monthly=${monthly}&years=${years}&app=${app}`)
+      const res = await axios.get(`${API}/api/finance?monthly=${monthly}&years=${years}&app=${app}`)
       setData(res.data)
     } catch (err) {
       console.error(err)

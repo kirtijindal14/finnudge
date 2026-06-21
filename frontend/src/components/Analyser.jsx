@@ -1,5 +1,6 @@
 import { useState } from "react"
 import axios from "axios"
+import API from '../api'
 
 const biasMap = {
   FOMO: { label: "Social Proof / Herd Behaviour", icon: "👥", color: "text-orange-400" },
@@ -31,7 +32,7 @@ export default function Analyser() {
     try {
       const formData = new FormData()
       formData.append("file", file)
-      const res = await axios.post("/api/analyse", formData)
+      const res = await axios.post(`${API}/api/analyse`, formData)
       setResult(res.data)
     } catch (err) {
       console.error(err)
