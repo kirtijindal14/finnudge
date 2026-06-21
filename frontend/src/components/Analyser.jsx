@@ -9,13 +9,8 @@ export default function Analyser() {
       <p className="text-gray-600 text-sm mb-8 max-w-lg mx-auto">
         Powered by CLIP vision embeddings + OCR text analysis
       </p>
-      
-        href="https://finnudge.streamlit.app"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-xl transition-colors inline-block text-lg"
-      >
-        Launch Analyser →
+      <a href="https://finnudge.streamlit.app" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-xl transition-colors inline-block text-lg">
+        Launch Analyser
       </a>
       <p className="text-gray-600 text-xs mt-4">Opens in a new tab</p>
     </div>
